@@ -21,6 +21,7 @@ public class LoginFormController {
     }
 
     public void loginOnAction(ActionEvent actionEvent) {
+
     }
 
     public void forgotPwOnAction(ActionEvent actionEvent) {
