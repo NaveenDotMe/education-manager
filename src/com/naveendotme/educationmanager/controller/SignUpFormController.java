@@ -1,6 +1,7 @@
 package com.naveendotme.educationmanager.controller;
 
 import com.naveendotme.educationmanager.model.User;
+import com.naveendotme.educationmanager.util.PasswordManager;
 import db.Database;
 import db.DbConnection;
 import javafx.event.ActionEvent;
@@ -30,7 +31,7 @@ public class SignUpFormController {
         String email = txtEmail.getText().toLowerCase();
         String firstname = txtFirstName.getText();
         String lastName = txtLastName.getText();
-        String password = txtPassword.getText().trim();
+        String password = new PasswordManager().encrypt(txtPassword.getText().trim());
 
         try {
             boolean isSaved = signup(new User(firstname, lastName, email, password));
