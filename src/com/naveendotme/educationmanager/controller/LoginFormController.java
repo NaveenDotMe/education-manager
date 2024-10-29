@@ -21,10 +21,16 @@ public class LoginFormController {
     }
 
     public void loginOnAction(ActionEvent actionEvent) {
+        String email = txtEmail.getText().toLowerCase();
+        String password = txtPassword.getText().trim();
+
+
+
 
     }
 
-    public void forgotPwOnAction(ActionEvent actionEvent) {
+    public void forgotPwOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("ForgotPasswordForm");
     }
 
     private void setUi(String location) throws IOException {
