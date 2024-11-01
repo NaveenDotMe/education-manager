@@ -1,4 +1,4 @@
-package db;
+package com.naveendotme.educationmanager.db;
 
 import com.naveendotme.educationmanager.model.User;
 
